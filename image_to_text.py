@@ -13,7 +13,7 @@ ret,thresh = cv2.threshold(gray,127,255,cv2.THRESH_BINARY_INV)
 cv2.waitKey(0)
 
 #find contours
-im2,ctrs,_ = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
+im2,ctrs = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
 #print(ctrs)
 #sort contours
 
